@@ -1,3 +1,22 @@
+
+// <-------------- MOBILE MENU -------------->
+
+const mobileNav = document.getElementsByClassName("mobile-nav");
+const popUpNav = document.getElementsByClassName("nav");
+
+for (let i = 0; i < mobileNav.length; i++) {
+
+  mobileNav[i].addEventListener("click", openMobileMenu);
+
+  function openMobileMenu(){
+  if(popUpNav[i].style.display === "block"){
+    popUpNav[i].style.display = "none";
+  } else{
+    popUpNav[i].style.display = "block";
+  }
+}
+}
+
 // <-------------- FAQ DROPDOWN SECTION -------------->
 
 const question = document.getElementsByClassName('question');
@@ -21,22 +40,4 @@ for (let i = 0; i < question.length; i++) {
       questionOf[i].style.background = "#141414";
     }
   }
-}
-
-// <-------------- MOBILE MENU -------------->
-
-const mobileNav = document.getElementsByClassName("mobile-nav");
-const popUpNav = document.getElementsByClassName("nav");
-
-for (let i = 0; i < mobileNav.length; i++) {
-
-  mobileNav[i].addEventListener("click", openMobileMenu);
-
-  function openMobileMenu(){
-  if(popUpNav[i].style.display === "block"){
-    popUpNav[i].style.display = "none";
-  } else{
-    popUpNav[i].style.display = "block";
-  }
-}
 }
