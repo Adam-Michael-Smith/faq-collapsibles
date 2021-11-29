@@ -141,7 +141,7 @@ footer p {
 }
 
 @media screen and (min-width: 480px) {
-  .mobile-nav, .mobile-nav-menu {
+  .mobile-nav {
     display: none;
   }
   .nav {
