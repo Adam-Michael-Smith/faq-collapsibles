@@ -38,7 +38,7 @@ body {
   cursor: pointer;
 }
 
-.mobile-nav-menu {
+.nav {
   display: none;
   position: fixed;
   height: 90vh;
@@ -50,7 +50,7 @@ body {
   text-align: center;
 }
 
-.mobile-nav-menu a {
+.nav a {
   display: block;
   color: #000;
   text-decoration: none;
@@ -59,11 +59,11 @@ body {
   font-size: 1.25rem;
 }
 
-.mobile-nav-menu a:nth-child(odd) {
+.nav a:nth-child(odd) {
   background-color: #fff;
 }
 
-.mobile-nav-menu a:hover {
+.nav a:hover {
   background-color: black;
   color: white;
 }

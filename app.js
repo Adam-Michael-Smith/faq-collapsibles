@@ -26,7 +26,7 @@ for (let i = 0; i < question.length; i++) {
 // <-------------- MOBILE MENU -------------->
 
 const mobileNav = document.getElementsByClassName("mobile-nav");
-const popUpNav = document.getElementsByClassName("mobile-nav-menu");
+const popUpNav = document.getElementsByClassName("nav");
 
 for (let i = 0; i < mobileNav.length; i++) {
 
