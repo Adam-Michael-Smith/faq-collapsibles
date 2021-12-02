@@ -1,8 +1,7 @@
-
 // <-------------- MOBILE MENU -------------->
 
-const mobileNav = document.getElementsByClassName("mobile-nav");
-const popUpNav = document.getElementsByClassName("nav");
+const mobileNav = document.getElementsByClassName('mobile-nav');
+const popUpNav = document.getElementsByClassName('nav');
 
 for (let i = 0; i < mobileNav.length; i++) {
 
@@ -17,6 +16,41 @@ for (let i = 0; i < mobileNav.length; i++) {
 }
 }
 
+// <-------------- CONTACT ICONS: RIGHT: OPEN -------------->
+
+const iconsRight = document.getElementsByClassName('iconsRight');
+const iconsBoxInd = document.querySelectorAll('.box');
+
+for (let i = 0; i < iconsRight.length; i++) {
+  for(let j = 0; j < iconsBoxInd.length; j++){
+
+  iconsBoxInd[j].addEventListener("mouseover", openRightIcons);
+
+  function openRightIcons(){
+  if(iconsBoxInd[j].style.width === "175px"){
+    iconsBoxInd[j].style.right = "0px"; 
+  } else{
+    iconsBoxInd[j].style.right = "0px";
+  }
+}
+}
+}
+// <-------------- CONTACT ICONS: RIGHT: CLOSE -------------->
+
+for (let i = 0; i < iconsRight.length; i++) {
+  for(let j = 0; j < iconsBoxInd.length; j++){
+
+  iconsBoxInd[j].addEventListener("mouseout", closeRightIcons);
+
+  function closeRightIcons(){
+  if(iconsBoxInd[j].style.width === "175px"){
+    iconsBoxInd[j].style.right = "175px";
+  } else{
+    iconsBoxInd[j].style.right = "-125px";
+  }
+}
+}
+}
 // <-------------- FAQ DROPDOWN SECTION -------------->
 
 const question = document.getElementsByClassName('question');
