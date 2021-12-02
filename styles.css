@@ -66,6 +66,7 @@ body {
 }
 
 .iconsRight {
+  display: none;
   right: 0;
   top: 35vh;
   position: fixed;
@@ -207,6 +208,9 @@ footer p {
 }
 
 @media screen and (min-width: 800px) {
+  .iconsRight {
+    display: block;
+  }
   .faq {
     margin: auto 20% 40px 20%;
   }
